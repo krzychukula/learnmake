@@ -1,16 +1,21 @@
+# compiler to use
+CC=g++
+# options I will pass to the compiler
+CFLAGS=-c -Wall
+
 all: hello
 
 hello: main.o factorial.o hello.o
-	g++ main.cpp hello.cpp factorial.cpp -o hello
+	$(CC) main.cpp hello.cpp factorial.cpp -o hello
 
 main.o: main.cpp
-	g++ -c main.cpp
+	$(CC) $(CFLAGS) main.cpp
 
 factorial.o: factorial.cpp
-	g++ -c factorial.cpp
+	$(CC) $(CFLAGS) factorial.cpp
 
 hello.o: hello.cpp
-	g++ -c hello.cpp
+	$(CC) $(CFLAGS) hello.cpp
 
 clean:
 	rm hello
