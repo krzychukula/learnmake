@@ -1,1 +1,4 @@
-Learn make with: http://mrbook.org/blog/tutorials/make/
+
+# Files created while learning Make with tutorial
+
+Tutorial: http://mrbook.org/blog/tutorials/make/
